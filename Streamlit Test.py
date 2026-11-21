@@ -38,3 +38,9 @@ st.checkbox(f"{array[7]} g of salad")
 st.checkbox(f"{array[8]} g Sambal oelek")
 st.checkbox(f"{array[9]} g Pickeled jalapenoes")
 
+st.markdown(
+    """ 
+    
+
+    """
+)
