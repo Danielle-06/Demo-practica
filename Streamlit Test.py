@@ -13,12 +13,17 @@ st.markdown(
 
 
 array = np.array([2,20,100,120,5,1,0.25,25,5,15])
-if st.button("2 x"):
-    array = array*2
-if st.button("1 x"):
-    array = array
-if st.button("0.5 x"):
-    array = array*0.5
+col1, col2,col3 = st.columns(3)
+
+with col1:
+    if st.button("2 x"):
+        array = array*2
+with col2:
+    if st.button("1 x"):
+        array = array
+with col3:
+    if st.button("0.5 x"):
+        array = array*0.5
 st.header("Ingredienten:")
 st.subheader("Tacos:")
 st.checkbox(f"{array[0]} medium tortillas")
